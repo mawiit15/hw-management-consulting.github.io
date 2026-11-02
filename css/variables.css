@@ -1,0 +1,45 @@
+/* =========================================================
+   DESIGN-EINSTELLUNGEN – Entwurf 2 „Modern“
+   Hier zentral Farben, Schriften und Abstände ändern.
+   Alle anderen CSS-Dateien verwenden diese Variablen.
+   ========================================================= */
+
+:root {
+  /* ---------- Farben ---------- */
+  --color-primary: #0f3d7a;        /* Dunkelblau – Überschriften */
+  --color-primary-dark: #0a2547;   /* Fußbereich */
+  --color-accent: #1f7ae0;         /* Leuchtendes Blau – Buttons, Akzente */
+  --color-accent-dark: #155fb3;    /* Blau beim Überfahren mit der Maus */
+  --color-accent-soft: #e6f0fc;    /* Helles Blau – Badges, Icons */
+
+  --color-bg: #ffffff;             /* Seitenhintergrund */
+  --color-bg-alt: #f4f7fb;         /* Hintergrund abwechselnder Abschnitte */
+  --color-text: #33415c;           /* Fließtext */
+  --color-text-muted: #6b7a90;     /* Nebensächlicher Text */
+  --color-text-inverse: #ffffff;   /* Text auf dunklem Hintergrund */
+  --color-border: #e2e8f0;         /* Linien und Rahmen */
+
+  /* ---------- Schriften ----------
+     Systemschriften: keine externen Schrift-Server nötig (datenschutzfreundlich). */
+  --font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fw-heading: 700;
+
+  --fs-base: 1.0625rem;            /* Grundschriftgröße (17px) */
+  --fs-small: 0.875rem;
+  --fs-h1: clamp(2.2rem, 4.6vw, 3.4rem);
+  --fs-h2: clamp(1.7rem, 3vw, 2.3rem);
+  --fs-h3: 1.15rem;
+  --line-height: 1.7;
+
+  /* ---------- Abstände & Maße ---------- */
+  --container-width: 1180px;       /* Maximale Inhaltsbreite */
+  --container-narrow: 780px;       /* Breite für Textabschnitte */
+  --section-padding: clamp(4rem, 8vw, 6.5rem);
+  --header-height: 72px;
+  --radius: 16px;                  /* Eckenrundung */
+  --radius-small: 10px;
+  --shadow: 0 10px 30px rgba(15, 61, 122, 0.08);
+  --shadow-hover: 0 18px 40px rgba(15, 61, 122, 0.16);
+  --transition: 0.25s ease;
+}

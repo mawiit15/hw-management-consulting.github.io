@@ -1,0 +1,78 @@
+/* =========================================================
+   GRUNDLAGEN
+   Reset, Typografie und allgemeine Elemente.
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-heading, 400);
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin: 0 0 1rem;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+
+p {
+  margin: 0 0 1.2rem;
+}
+
+a {
+  color: var(--color-accent-dark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+address {
+  font-style: normal;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
